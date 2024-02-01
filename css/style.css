@@ -26,7 +26,7 @@ body{
     background-color: white;
     box-shadow: 1px 1px 15px #ebebeb;
 }
-#main-bc{
+.main-bc{
     width: 100%;
     height: 100%;
     background-image: url(../assets/bc1.png);
@@ -34,6 +34,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #upper-layer{
     width: 100%;
     height: 100vh;
@@ -45,8 +46,8 @@ body{
 #navbar{
     width: 98%;
 }
-#offcanvasRight{
-    
+.navbar-toggler{
+    font-size: 1.4rem !important;
 }
 #register-btn{
     background-color: var(--green);
@@ -72,6 +73,7 @@ body{
    width: 100%;
    color: var(--green) !important;
    position: fixed;
+   z-index: 3;
 }
 .current-tab{
     background-color: var(--green);
@@ -84,13 +86,33 @@ body{
     font-weight: 100;
     font-size: 20px;
 }
-.paragraphs{
-    color: white;
-    font-weight: 100;
-    font-size: 26px;
+.grey-section{
+    background-color: #f4f4f484;
 }
-video{
-    z-index: -1;
+#overview-text{
+    font-size: 24px;
+    line-height: 40px;
+}
+#overview-text-first{
+    font-family: myFontBold;
+}
+
+.main-title{
+    color: var(--green);
+    font-size: 28px;
+    width: fit-content;
+    border-bottom: 3px solid var(--green);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-weight: 600;
+}
+.bi{
+    color: var(--green) !important;
+    margin-left: 5px;
+    font-size:50px !important;
+}
+.modal-body{
+    height: max-content !important;
 }
 .titles{
     color: white;
@@ -102,19 +124,8 @@ video{
     height: 6px;
     border-radius: 20px;
 }
-#vector-grey{
-    transform: rotate(50deg);
-    margin-left: -30em;
-    margin-top: -22em !important;
-    position: absolute;
-    z-index: -1;
-}
-#vector-neon{
-    transform: rotate(3deg);
-    margin-left: 66em !important;
-    margin-top: 11em !important;
-    position: absolute;
-    z-index: -1;
+.award-value{
+    font-size: 24px;
 }
 .navbar-toggler-icon{
     color: var(--green);
@@ -137,10 +148,54 @@ video{
 .social-icon{
     height: 70px;
 }
+.outcomes{
+    font-size: 1.25rem;
+}
+.freq-accordian-item button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #d2d2d2a0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: start;
+    color: black;
+}
+.freq-accordian-item button:hover{
+    background-color: #008c6716;
+}
+.freq-accordian-item button img{
+    height: 30px;
+}
+.freq-accordian-item button:focus{
+    background-color: #008c6716;
+}
+.freq-accordian-item:last-child button{
+    border-bottom: none;
+}
+.freq-accordian-body{
+    display: none;
+    padding: 1.5em 1em 1.5em 1em;
+    background-color: #e6e6e656;
+}
 .close-btn{
     color: white;
     background-color: transparent;
     border: none
+}
+.spo-logo{
+    height: 80px;
+}
+.sponsor-type{
+    color: var(--green);
+    font-weight: 600;
+    font-size: 20px;
 }
 footer{
     background-color: var(--navy);
@@ -150,6 +205,54 @@ footer{
 }
 #footer_ahhil_logo{
     height: 40px;
+}
+.case-card{
+    box-shadow: 1px 1px 15px #ebebeb;
+    border-radius: 20px;
+}
+.case-card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+.case-card button{
+    background-color: var(--green);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+.case-card button:hover{
+    background-color: var(--green-hover);
+    border-color: var(--green-hover);
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background-color: var(--green-hover);
+    border-color: var(--green-hover);
+    box-shadow: none !important;
+}
+.case-card img{
+    height: 110px;
+}
+.case-card span{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 24px;
+    color: var(--green);
+}
+#v1-footer{
+    height: 350px;
+}
+.stat-num{
+    font-family: myFontBold;
+    font-size: 48px;
+    margin-bottom: 0.7em;
 }
 @media screen and (min-width: 421px) and (max-width: 568px){
     .social-icon{
@@ -167,14 +270,14 @@ footer{
     
 }
 @media screen and (max-width: 390px){
-    #main-bc{
+    .main-bc{
         background-image: url(../assets/bc_sm.png);
         background-size:cover;
         background-position: center;
     }
 }
 @media screen and (min-width: 391px) and (max-width: 420px){
-    #main-bc{
+    .main-bc{
         background-image: url(../assets/bc_sm2.png);
         background-size:cover;
         background-position: center;
@@ -209,6 +312,28 @@ footer{
     #case-library-title{
         font-size: 50px !important;
     }
+    #main-bc-m{
+        background-image: url(../assets/bc_sm_main.png?a=9);
+    }
+    .freq-accordian-item button{
+        font-size: 16px;
+    }
+    .outcomes{
+        font-size: 16px !important;
+    }
+    .main-title-v2{
+        font-size: 24px;
+    }
+    .main-title-v3{
+        font-size: 18px;
+    }
+    .freq-accordian-item button{
+        font-size: 14px;
+    }
+    #v1-footer{
+        height: 110px;
+    }
+    
 }
 @media screen and (max-width: 320px){
     .social-icon{
@@ -245,26 +370,29 @@ footer{
 @media screen and (min-width: 651px) and (max-width: 991px){
     
 }
-@media screen and (min-width: 421px) and (max-width: 660px){
-    
+@media screen and (min-width: 421px) and (max-width: 768px){
+    #v1-footer{
+        height: 200px;
+    }
 }
 @media screen and (max-width: 770px){
     
 }
 @media screen and (min-width: 421px) and (max-width: 1024px){
-    #main-bc{
+    .main-bc{
         background-image: url(../assets/bc_tablets.png);
-        background-size:contain;
+        background-size:cover;
         background-position: center;
     }
     #register-btn{
         font-size: 30px;
         padding: 0.5em 1.8em 0.5em 1.8em;
-    }
-    
+    }   
 }
-@media screen and (min-width: 720px) and (max-width: 991px){
-    
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #v1-footer{
+        height: 250px;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
     

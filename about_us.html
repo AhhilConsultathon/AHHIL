@@ -7,7 +7,7 @@
     <meta name="description" content="تحدي أهّل كونسلتاثون">
     <meta name="keywords" content="تحدي أهّل كونسلتاثون, أهّل كونسلتاثون، نادي الهندسة الصناعية، جامعة الملك سعود">
     <title>أهّل كونسلتاثون | من نحن</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css?a=12" rel="stylesheet" type="text/css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
 </head>
 <body>
   <div class="vh-100">
-   <div id="main-bc">  
+   <div class="main-bc">  
         <header id="header">
             <nav class="navbar navbar-expand-xxl" id="navbar-ar" dir="rtl">
               <div class="p-0 p-lg-1 container-fluid d-flex">
@@ -85,12 +85,67 @@
                 </div>
             </div>      
         </div>
-
      </div>
    </div>
    <div class="seperator"></div>
    <!--Main-->
-   <main></main>
+   <main>
+     <div class="p-5 grey-section d-flex justify-content-center fs-5">
+      <div class="d-flex flex-column align-items-center" dir="rtl">
+        <div class="col-11 col-md-10 col-lg-5 pt-5">
+          <p>
+            تحدي أهّل كونسلتاثون هو أحد أعمال مبادرة أهّل مستشارًا التي تهدف إلى تأهيل الطلبة لدخول مجال الاستشارات.
+          </p>
+          <img style="float: left" src="assets/AHHIL_LOGO.png" height="110">
+        </div>
+        <div></div>
+        <div class="text-center pt-5 mt-5 d-flex flex-column justify-content-center align-items-center">
+            <p>
+                مبادرة أهّل مستشارًا هي إحدى مبادرات نادي الهندسة الصناعية في جامعة الملك سعود
+            </p>
+            <img src="assets/iec_logo.png" height="110">
+        </div>
+      </div>
+     </div>
+     <div class="container pt-5 pb-5 mt-5" dir="rtl">
+      <div class="d-flex container flex-column align-items-center">
+        <div class="d-flex text-center justify-content-center text-lg-start main-title main-title-v3 pb-3">نبذة عن النسخة الأولى من أهّل كونسلتاثون</div>
+        <div class="d-flex mt-5 pt-5 justify-content-center">
+            <div class="d-flex justify-content-center">
+                <video id="vid" poster="assets/promo-poster.png" controls>
+                    <source src="assets/AHHIL Consultation 3Days Promo 2.0.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+      </div>
+     </div>
+     <p class="text-center mt-5 pt-5 pb-3 fs-1" style="color: var(--green)">الإحصائيات</p>
+     <div class="d-flex mt-4 justify-content-center" style="background-color: var(--green); color: white;" dir="rtl">
+        <div class="d-flex container justify-content-center">
+            <div class="p-5 w-100 container d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <span class="stat-num" id="stat-views">2.5m</span>
+                    <p>مشاهدة على مختلف منصات التواصل الاجتماعي</p>
+                </div>
+                <div class="mt-5 mt-lg-0 text-center d-flex flex-column justify-content-center align-items-center">
+                    <span class="stat-num" id="stat-teams">0</span>
+                    <p>عدد المجموعات المتقدمة </p>
+                </div>
+                <div class="mt-5 mt-lg-0 text-center d-flex flex-column justify-content-center align-items-center">
+                    <span class="stat-num" id="stat-awards">0</span>
+                    <p>مقدار الجوائز التي قدمت للفائزين</p>
+                </div>
+                <div class="mt-5 mt-lg-0 text-center d-flex flex-column justify-content-center align-items-center">
+                    <span class="stat-num" id="stat-webviews">0</span>
+                    <p>الزيارات على موقع التحدي</p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="mt-5 d-flex justify-content-center">
+        <img src="assets/v1-sp-footer.png" id="v1-footer">
+     </div>
+   </main>
    <!--Footer-->
    <footer class="w-100 mt-5">
     <div class="d-flex flex-column pb-3">
@@ -99,22 +154,22 @@
             <div class="titles-underline mt-3" style="background-color: white;"></div>
         </div>
         <div class="col-sm-9 col-lg-7 col-xl-5 col-12 container d-flex justify-content-around mt-lg-3 mt-2 pt-3 pb-5" style="min-height:fit-content">
-            <a href="#" class="mb-5 mt-lg-0 mb-lg-0 social">
+            <a href="https://x.com/AhhilKsu" class="mb-5 mt-lg-0 mb-lg-0 social">
                 <img src="assets/x.png" class="social-icon">
             </a>
-            <a href="https://twitter.com/daasksu" class="mb-5 mt-lg-0 mb-lg-0 social">
+            <a href="https://linkedin.com/company/ahhil-program/" class="mb-5 mt-lg-0 mb-lg-0 social">
                 <img src="assets/LinkedIn.png" class="social-icon">
             </a>
-            <a href="#" class="mb-5 mt-lg-0 mb-lg-0 social">
+            <a href="https://t.snapchat.com/pUJJzgTF" class="mb-5 mt-lg-0 mb-lg-0 social">
                 <img src="assets/Snap.png" class="social-icon">
             </a>
-            <a href="https://twitter.com/daasksu" class="mb-5 mt-lg-0 mb-lg-0 social">
+            <a href="https://youtube.com/@ieclub5523" class="mb-5 mt-lg-0 mb-lg-0 social">
                 <img src="assets/YouTube.png" class="social-icon">
             </a>
-            <a href="#" class="mb-5 mt-lg-0 mb-lg-0 social">
+            <a href="https://tiktok.com/@iec_ksu" class="mb-5 mt-lg-0 mb-lg-0 social">
                 <img src="assets/TikTok.png" class="social-icon">
             </a>
-            <a href="#" class="mb-5 mt-lg-0 mb-lg-0 social">
+            <a href="https://instagram.com/iec.ksu" class="mb-5 mt-lg-0 mb-lg-0 social">
                 <img src="assets/Instagram.png" class="social-icon">
             </a>
         </div>
@@ -126,6 +181,7 @@
         </div>
     </div>
    </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -137,5 +193,40 @@ $(window).scroll(function(){
     if (scroll >= 80) header.addClass('fixed');
     else header.removeClass('fixed');
 });
+
+$('#stat-teams').waypoint(function() {
+  increment('stat-teams', 273);
+}, {offset: '75%'});
+
+$('#stat-awards').waypoint(function() {
+  incrementv2('stat-awards', 50);
+}, {offset: '75%'});
+
+$('#stat-webviews').waypoint(function() {
+  incrementv2('stat-webviews', 14);
+}, {offset: '75%'});
+
+function increment(elem, finalVal) {
+  var currVal = parseInt(document.getElementById(elem).innerHTML, 10);
+  if (currVal < finalVal) {
+    currVal++;
+    document.getElementById(elem).innerHTML = currVal;
+   
+    setTimeout(function() {
+      increment(elem, finalVal);
+    }, 5)
+  }
+};
+function incrementv2(elem, finalVal) {
+  var currVal = parseInt(document.getElementById(elem).innerHTML, 10);
+  if (currVal < finalVal) {
+    currVal++;
+    document.getElementById(elem).innerHTML = currVal + "k";
+
+    setTimeout(function() {
+      incrementv2(elem, finalVal);
+    }, 40)
+  }
+};
 </script>
 </html>
